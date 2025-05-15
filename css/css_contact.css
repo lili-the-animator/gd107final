@@ -49,6 +49,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
 body {
 	background-color: #d9cec0;
 	overflow-x: hidden;
@@ -64,13 +70,6 @@ header {
   justify-content: space-between;
 	flex-direction: row;
 }
-
-#titles {
-	text-align: center;
-	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
-	font-size: 12px;
-}
-
 
 ul, li {
   color: #f3f3f3;
@@ -92,9 +91,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-#logo {
-	align-self: auto;
-	flex-shrink: 2;
+#titles {
+	text-align: center;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+	font-size: 12px;
 }
 
 #introduction {
@@ -104,53 +104,7 @@ a:hover {
 	justify-content: center;
 }
 
-#featured {
-	background-color: #d9cec0;
-}
-
-.frame {
-	max-width: 1536px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.frame-item {
-    flex: 1;
-    text-align: center;
-}
-
-/* horizontal to vertical */
-@media (max-width: 1280px) {
-    .frame {
-       flex-direction: column;
-    }
-    .frame-item {
-       flex: none;
-       width: 100%;
-    }
-}
-
-footer {
-	background-color: #414141;
-  width: 100%; /* full width */
-  color: #cecfd0;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-	flex-direction: row;
-	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
-}
-
-#nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
- /* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px;  
@@ -187,14 +141,43 @@ input[type=submit]:active {
   padding: 20px;
 } 
 
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: 12px;
-  }
+footer {
+  background-color: #414141;
+  width: 100%; /* full width */
+  color: #cecfd0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 9px;
+  font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
 }
 
+#nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#foot-titles {
+	text-align: center;
+}
+
+#credit {
+	text-align: center;
+	padding-top: 8px;
+}
+
+
 #linkedin {
-	margin-top: auto;
-	margin-bottom: auto;
-	padding-right: 8px;
+	margin-top: 1.5rem;
+}
+
+#in {
+	margin-right: 3rem;
+	font-size: 20px;
+	border: solid #F3F3F3 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 4px;
 }

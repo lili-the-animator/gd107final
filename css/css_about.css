@@ -7,14 +7,9 @@
   padding-right: 0.5rem;
 }
 
-#portrait {
-	max-width: 300px;
-	margin-left: auto;
-}
-
 .responsive {
   width: 100%;
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
 }
 
@@ -24,7 +19,7 @@
     max-width: 1280px;
   }
 	.responsive {
-    max-width: 220px;
+    max-width: 440px;
   }
 }
 
@@ -34,7 +29,7 @@
     max-width: 1024px;
   }
 	.responsive {
-    max-width: 210px;
+    max-width: 430px;
   }
 }
 
@@ -44,7 +39,7 @@
     max-width: 768px;
   }
 	.responsive {
-    max-width: 200px;
+    max-width: 420px;
   }
 }
 
@@ -54,7 +49,7 @@
     max-width: 640px;
   }
 	.responsive {
-    max-width: 190px;
+    max-width: 410px;
   }
 }
 
@@ -64,7 +59,7 @@
     max-width: 475px;
   }
 	.responsive {
-    max-width: 180px;
+    max-width: 400px;
   }
 }
 
@@ -75,6 +70,12 @@
   }
 	.responsive {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 12px;
   }
 }
 
@@ -93,13 +94,6 @@ header {
   justify-content: space-between;
 	flex-direction: row;
 }
-
-#titles {
-	text-align: center;
-	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
-	font-size: 12px;
-}
-
 
 ul, li {
   color: #f3f3f3;
@@ -121,11 +115,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-#logo {
-	align-self: auto;
-	flex-shrink: 2;
-}
-
 #introduction {
 	background-color: #8a7167;
 	display: flex;
@@ -134,34 +123,21 @@ a:hover {
 	align-content: center;
 }
 
-#featured {
-	background-color: #d9cec0;
+#portrait {
+	max-width: 500px;
+	margin-left: auto;
 }
 
-.frame {
-	max-width: 1536px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#bio {
+	text-align: center;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+	font-size: 12px;
 }
 
-.frame-item {
-    flex: 1;
-    text-align: center;
+#intro {
+	width: 25vw;
 }
 
-/* horizontal to vertical */
-@media (max-width: 1280px) {
-    .frame {
-       flex-direction: column;
-    }
-    .frame-item {
-       flex: none;
-       width: 100%;
-    }
-}
 
 footer {
 	background-color: #414141;
@@ -192,16 +168,6 @@ footer {
 	border-radius: 4px;
 }
 
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: 12px;
-  }
-}
-
-#intro {
-	width: 25vw;
-}
-
 #foot-titles {
 	text-align: center;
 }
@@ -209,8 +175,4 @@ footer {
 #credit {
 	text-align: center;
 	padding-top: 8px;
-}
-
-#featured {
-	padding-bottom: 40px;
 }
