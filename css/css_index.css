@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.responsive {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+body {
+	background-color: #414141;
+	overflow-x: hidden;
+}
+
+header {
+  background-color: #414141;
+  position: static; /* sets the header to fixed position */
+  width: 100%; /* full width */
+  color: #cecfd0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+	flex-direction: column;
+}
+
+#titles {
+	text-align: center;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+	font-size: 12px;
+}
+
+nav {
+	background-color: #64504a;
+}
+
+ul, li {
+  color: #f3f3f3;
+  font-size: 20px;
+  font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+  display: flex;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+li:hover {
+	background-color: #8a7167;
+}
+
+a {
+	color: #f3f3f3; /* sets white color for links */
+	text-decoration: none; /* removes underline */
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #404040;
+}
+
+#lj {
+	width: 150px;
+}
+
+#intro {
+	background-color: #8a7167;
+	width: 100vw;
+}
+
+#featured {
+	background-color: #d9cec0;
+}
+
+.frame {
+	max-width: 1536px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.frame-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* sets images from horizontal to vertical */
+@media (max-width: 1280px) {
+    .frame {
+       flex-direction: column;
+    }
+    .frame-item {
+       flex: none;
+       width: 100%;
+    }
+}
+
+footer {
+	background-color: #414141;
+  width: 100%; /* full width */
+  color: #cecfd0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+	flex-direction: row;
+	padding-top: 9px;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+}
+
+#nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,200 @@
+@charset "utf-8";
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+body {
+	background-color: #d9cec0;
+	overflow-x: hidden;
+}
+
+header {
+  background-color: #414141;
+  position: static; /* sets the header to fixed position */
+  width: 100%; /* full width */
+  color: #cecfd0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+	flex-direction: row;
+}
+
+#titles {
+	text-align: center;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+	font-size: 12px;
+}
+
+
+ul, li {
+  color: #f3f3f3;
+  font-size: 20px;
+  font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+  display: flex;
+  padding: 5px;
+  margin: auto;
+	gap: 12px;
+  text-align: center;
+}
+
+a {
+	color: #f3f3f3; /* sets white color for links */
+	text-decoration: none; /* removes underline */
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	align-self: auto;
+	flex-shrink: 2;
+}
+
+#introduction {
+	background-color: #8a7167;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#featured {
+	background-color: #d9cec0;
+}
+
+.frame {
+	max-width: 1536px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.frame-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* horizontal to vertical */
+@media (max-width: 1280px) {
+    .frame {
+       flex-direction: column;
+    }
+    .frame-item {
+       flex: none;
+       width: 100%;
+    }
+}
+
+footer {
+	background-color: #414141;
+  width: 100%; /* full width */
+  color: #cecfd0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+	flex-direction: row;
+	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
+}
+
+#nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* vertically resize the text area */
+}
+
+input[type=submit] {
+  background-color: #745951;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* lighter brown color when mouse hovers above submit button */
+input[type=submit]:hover {
+  background-color: #8A7167;
+}
+
+input[type=submit]:active {
+	transform: scale(0.8);
+}
+
+/* Add a background color and some padding around the form */
+#form {
+  border-radius: 5px;
+ 
+  padding: 20px;
+} 
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+#linkedin {
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 8px;
+}
