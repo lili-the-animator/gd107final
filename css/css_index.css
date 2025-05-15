@@ -59,6 +59,12 @@
   }
 }
 
+@media (max-width: 350px) {
+  .container {
+    width: 100%;
+  }
+}
+
 body {
 	background-color: #414141;
 	overflow-x: hidden;
