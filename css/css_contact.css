@@ -93,8 +93,7 @@ a:hover {
 
 #titles {
 	text-align: center;
-	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
-	font-size: 12px;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
 }
 
 #introduction {
@@ -137,7 +136,7 @@ input[type=submit]:active {
 /* Add a background color and some padding around the form */
 #form {
   border-radius: 5px;
- 
+  font-family: Cambria, Georgia, serif;
   padding: 20px;
 } 
 

@@ -9,7 +9,7 @@
 
 .responsive {
   width: 100%;
-  max-width: 450px;
+  max-width: 275px;
   height: auto;
 }
 
@@ -19,7 +19,7 @@
     max-width: 1280px;
   }
 	.responsive {
-    max-width: 440px;
+    max-width: 265px;
   }
 }
 
@@ -29,7 +29,7 @@
     max-width: 1024px;
   }
 	.responsive {
-    max-width: 430px;
+    max-width: 255px;
   }
 }
 
@@ -39,7 +39,7 @@
     max-width: 768px;
   }
 	.responsive {
-    max-width: 420px;
+    max-width: 245px;
   }
 }
 
@@ -49,7 +49,7 @@
     max-width: 640px;
   }
 	.responsive {
-    max-width: 410px;
+    max-width: 235px;
   }
 }
 
@@ -59,7 +59,7 @@
     max-width: 475px;
   }
 	.responsive {
-    max-width: 400px;
+    max-width: 225px;
   }
 }
 
@@ -71,12 +71,15 @@
 	.responsive {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: 12px;
-  }
+	.text {
+		font-size: 18px;
+	}
+	.p-text{
+		font-size: 14px;
+	}
+	.f-text{
+		font-size: 12px;
+	}
 }
 
 body {
@@ -128,10 +131,17 @@ a:hover {
 	margin-left: auto;
 }
 
+h1 {
+	text-align: center;
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 30px;
+}
+
 #bio {
 	text-align: center;
-	font-family: “Rockwell Extra Bold”, “Rockwell Bold”, monospace;
-	font-size: 12px;
+	font-family: Cambria, Georgia, serif;
+	font-size: 18px;
+	color: #d9cec0;
 }
 
 #intro {
