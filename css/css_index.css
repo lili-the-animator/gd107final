@@ -50,6 +50,9 @@
   .container {
     max-width: 475px;
   }
+	.text {
+    font-size: 12px;
+  }
 }
 
 /* xs */
@@ -57,17 +60,17 @@
   .container {
     width: 100%;
   }
+	.text {
+    font-size: 12px;
+  }
 }
-
+/* mobile */
 @media (max-width: 350px) {
   .container {
     width: 100%;
   }
-}
-/* responsive text */
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: 12px;
+	.text {
+    font-size: 11px;
   }
 }
 
@@ -142,6 +145,7 @@ a:active {
 #intro {
 	background-color: #8a7167;
 	width: 100vw;
+	color: #d9cec0;
 }
 
 #featured {
