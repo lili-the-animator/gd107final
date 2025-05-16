@@ -9,7 +9,7 @@
 
 .responsive {
   width: 100%;
-  max-width: 275px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -19,7 +19,7 @@
     max-width: 1280px;
   }
 	.responsive {
-    max-width: 265px;
+    max-width: 300px;
   }
 }
 
@@ -29,7 +29,7 @@
     max-width: 1024px;
   }
 	.responsive {
-    max-width: 255px;
+    max-width: 290px;
   }
 }
 
@@ -39,7 +39,7 @@
     max-width: 768px;
   }
 	.responsive {
-    max-width: 245px;
+    max-width: 280px;
   }
 }
 
@@ -49,7 +49,7 @@
     max-width: 640px;
   }
 	.responsive {
-    max-width: 235px;
+    max-width: 270px;
   }
 }
 
@@ -59,7 +59,7 @@
     max-width: 475px;
   }
 	.responsive {
-    max-width: 225px;
+    max-width: 260px;
   }
 }
 
